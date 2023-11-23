@@ -33,7 +33,7 @@ class Enemy:
     def heal(self, health):
         self.health = self.health + health
 
-   def attack(self, target):
+    def attack(self, target):
         print(first_letter_uppercase_e(self.name) + " greift an")
         target.health -= self.attack_damage
         if target.health >= 0:
@@ -46,7 +46,7 @@ class Enemy:
         player.gold += self.gold
         print(f"{player.name} hat {self.gold} Gold erhalten" )
         player.subarea.enemies.remove(self)
-       Quest.all_killed_enemies[self.name] += 1
+        Quest.all_killed_enemies[self.name] += 1
         del self
 
 class Wolf(Enemy):
@@ -166,7 +166,7 @@ class Mage(Boss):
 
     def attack(self, player):
 
-       rand = random.randint(1,3)
+        rand = random.randint(1,3)
         if rand == 1:
             self.special_attack(player)
         else:

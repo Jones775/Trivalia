@@ -104,7 +104,7 @@ class Half_Timbered_House(Building):
 class Marketplace(Sub_Area):
 
     def __init__(self):
-       temp = random.randint(1, 3)
+        temp = random.randint(1, 3)
         if temp == 1:
             super().__init__("marktplatz", [Villager(), Merchant()], [], [], [Chest(), Chest()])
         elif temp == 2:
@@ -385,7 +385,7 @@ class Pond(Field):
         temp = random.randint(1, 3)
         if temp == 1:
             super().__init__("teich", [], [], [Stone()], [])
-       elif temp == 2:
+        elif temp == 2:
             super().__init__("teich", [], [], [], [])
         elif temp == 3:
             super().__init__("teich", [Traveller()], [], [Stone()], [])
