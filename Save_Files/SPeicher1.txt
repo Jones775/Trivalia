@@ -1,0 +1,10 @@
+player1.name=Jones
+player1.health=80
+player1.inventory=['apfel', 'kartoffel']
+player1.location=deine huette
+player1.subarea=Deine Huette
+player1.main_weapon=Kleiner Dolch
+player1.gold=20
+player1.armor=Lederkleidung
+player1.hunger=49
+player1.max_health=80

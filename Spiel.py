@@ -6,7 +6,7 @@ from Player_Class import *
 from Item_Class import *
 from NPC_Class import *
 from Locations_Class import *
-from Quest_Class import *
+#from Quest_Class import *
 
 
 
@@ -65,7 +65,7 @@ print("Um das Spiel zu beginnen, tippe einen Befehl ein: ")
 #Game Loop
 while True:
 
-    Quest.check_all_conditions()
+    #Quest.check_all_conditions()
 
     player1.hunger -= 1
 
@@ -163,7 +163,7 @@ while True:
         if temp.lower().strip() == "abbrechen":
             print("Es wurde kein Speicherstand geladen")
         elif temp in savefiles:
-            temp = "Save_Files\\"+temp
+            temp = "Save_Files/"+temp
 
             variables = []
             values = []

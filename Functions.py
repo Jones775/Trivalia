@@ -120,7 +120,7 @@ def show_map():
     print("|WWWWW\*/WWWWWWWWWWWWWWWWWWWWWWWWWWW\   /      \X /    \/    \       °     X****   °   °       °     °   * *****    °     °  /\/  \  °     *|--|  °    ° ***     °  |")
     print("|WWWW\ *  /WWWWWWWWWWWWWWWWWWWWWWWWW\/WWWWWWWWW\ *Todesschlucht  °      ° * Geroellfelder   °     °  *****X Die Passage /\  /  \  /\  °  °  |/\|     °   °  ** °    |")
     print("|WWW\  X Holzfäller /WWWWWWWWWWWWWWWWWWW\ 000000 *   °      °       °  ***   °      °  ° /| X******** °   *   °      ° /  \/  __\/  \   °  ° X* Stadttor ° /\ *  °  |")
-    print("|-\°/W\ *** /WWWWWWWWW\   OOOOOOOOOOOOOOOOOOOOO  *   *********  °  ****          °        Dorfruinen     ° *      °   /    \_/~//    \ °   °  *    °   /\ //\\* /\  |")
+    print("|-\°/W\ *** /WWWWWWWWW\   OOOOOOOOOOOOOOOOOOOOO  *   *********  °  ****          °        Dorfruinen     ° *      °   /    \_/~//    \ °   °  *    °   /\ // \* /\  |")
     print("| ~\°  /WW\*****/WWWWWWWWWWW\ 00000000000000000 * *** °       ****X*******   °        °        °       °   *  °       °   _/~_/X Quelle  °   *XAusguck/  \  X* /  \ |")
     print("|~  \----\°     *****  ° /WWWW\Wasserfall00000 ***   °     °     Grenzturm****   °        °       °       *     °       _/~_/   ******/WWW\**/WW\  Verlassene Minen |")
     print("|  ~  ~~  |   °   °  *  °   /WWWW\ X/WWWWW\***X Huegelland      °        °    *****     °      °  *******X Grasfelder  /~ /    /WWWWW\*** */WWWWWWWWWWWWWWWWWW\  °  |")
@@ -168,7 +168,7 @@ def create_save_file(filename, player1):
                 break
 
         else:
-            with open("Save_Files\\"+filename+".txt", "x") as file:
+            with open("Save_Files/"+filename+".txt", "x") as file:
 
                 file.write("player1.name=")
                 file.write(str(player1.name))
