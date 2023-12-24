@@ -1,1 +1,1 @@
-Coming Soon
+Text-Adventure Fantasy Game in German
